@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="Latitude.css">
+    <title>Latitude</title>
+</head>
+    <!-- Web Site Index page -->
+<body class="Main">
+ <!-- ** Why right side does NOT go all the way ??? mw-100*** 
+ Why sizes in between small and large go crazy ?? ***
+why drop down does NOT work  ***** -->
+    <div class="container-fluid">
+        <!-- Our columns function in rows. -->
+        <div class="row TopRow">
+            <div class="col-sm-6 col-md-3">
+                <p class="TopRow1">
+                    Latitude 
+                </p>
+            </div>
+            <div class="col-sm-1 col-md-6">
+            </div>                
+            <div class="col-sm-2 col-md-1">
+                <!-- <p class="TopRowL" > -->
+                    <div class="dropdown show TopRowD">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" 
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Plots
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Max Temperature</a>
+                            <a class="dropdown-item" href="#">Humidity</a>
+                            <a class="dropdown-item" href="#">Cludiness</a>
+                            <a class="dropdown-item" href="#">Wind Speed</a>
+                        </div>
+                    </div>
+                <!-- </p> -->
+            </div>
+            <div class="col-sm-2 col-md-1">
+                <p class="TopRowL">
+                    Comparison
+                </p>
+            </div>
+            <div class="col-sm-1 col-md-1">
+                <p class="TopRowL">
+                    Data
+                </p>                            
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-sm-12 col-md-7 LeftMain">
+                <h1>Summary: Latitude .vs. X</h1>
+                <div class="LeftContent">
+                    <p>
+                        <img class="Image" src="Latitude vs Temperature.png" height="300" alt="python">
+                    </p>
+                </div>
+                <p> The purpose of this project was to analyze how weather changes as you get closer to the equator. To 
+                        accomplish this analysis, we first pulled data from OpenWeatherMap API to ensamble a dataset on over 500 
+                        cities.
+                </p>
+                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather .vs. latitude. 
+                        factors we looked at included temperature, cloudiness, wind speed and humidity. This site provides the 
+                        source data and visualizations created as part of the analysis as well as explanations and descriptions 
+                        of any trends and sorrelations witnessed.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-4 RightMain">
+                <h2>Visualizations</h2>
+                <p class="RightMain" >
+                    <img class="SmallImage" src="Latitude vs Temperature.png" height="150" alt="python">
+                    <img class="SmallImage" src="Latitude vs Humidity.png" height="150" alt="python">
+                    <img class="SmallImage" src="Latitude vs Cloudiness.png" height="150" alt="python">
+                    <img class="SmallImage" src="Latitude vs Wind.png" height="150" alt="python">
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
