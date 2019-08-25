@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">   -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" type="text/css" href="../../../../../temp/Rice/bootstrap.min.css">  
     <link rel="stylesheet" type="text/css" href="Latitude.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
     <title>Latitude</title>
 </head>
-
-<!-- Web Site Index page -->
+    <!-- Visualization page -->
 <body class="Main">
+ <!--  Is there a way of passing a parameter to make 1 visual page and just
+    determine the image to show ****
+    Is there a way NOT having to repeat the navbar code in every single file ???
+ -->
     <div class="row">
         <!-- Our columns function in rows. -->
         <div class="container-fluid NavBar">
@@ -38,7 +41,7 @@
                         </div>
                     </li>  
                     <li class="nav-item mx-3">
-                        <a class="nav-link" href="Comparison.html">Comparison</a>
+                    <a class="nav-link" href="Comparison.html">Comparison</a>
                     </li>
                     <li class="nav-item mx-3">
                     <a class="nav-link" href="Data.html">Data</a>
@@ -48,16 +51,17 @@
             </nav>
         </div>
     </div>
-  
+        <!-- ** why is the upper margin not working in this page???
+        How make the right column box smaller than the one in the left *** -->
     <div class="row MainRow">
         <div class="col-12 col-sm-11 col-md-11 col-lg-6 LeftMain">
-            <h1>Summary: Latitude .vs. X</h1>
-            <div class="LeftContent">
+            <h1>Cloudiness</h1>
+            <div>
                 <p>
-                    <img class="img-circle img-responsive ImageCtr" src="MaxTemp.png" height="300" alt="python">
+                    <img class="ImageCtr" src="Cloudiness.png" height="350" alt="python">
                 </p>
             </div>
-            <p> The purpose of this project was to analyze how weather changes as you get closer to the equator. To 
+            <p> Lorem Ipsum - The purpose of this project was to analyze how weather changes as you get closer to the equator. To 
                     accomplish this analysis, we first pulled data from OpenWeatherMap API to ensamble a dataset on over 500 
                     cities.
             </p>
@@ -65,18 +69,19 @@
                     factors we looked at included temperature, cloudiness, wind speed and humidity. This site provides the 
                     source data and visualizations created as part of the analysis as well as explanations and descriptions 
                     of any trends and sorrelations witnessed.
-            </p>
+            </p>        
         </div>
+        
         <div class="col-12 col-sm-11 col-md-11 col-lg-5 RightMain">
             <h2>Visualizations</h2>
-                <div>
-                    <a href="VisualTemp.html"><img class="img-circle img-responsive SmallImage" src="MaxTemp.png" height="190" alt="python"></a>
-                    <a href="VisualHumidity.html"><img class="img-circle img-responsive SmallImage" src="Humidity.png" height="190" alt="python"></a>
-                    <a href="VisualCloudiness.html"><img class="img-circle img-responsive SmallImage" src="Cloudiness.png" height="190" alt="python"></a>
-                    <a href="VisualWind.html"><img class="img-circle img-responsive SmallImage" src="Wind.png" height="190" alt="python"></a>
-                </div>
+                <p class="RightMain" >
+                    <a href="VisualTemp.html"><img class="SmallImage" src="MaxTemp.png" height="190" alt="python"></a>
+                    <a href="VisualHumidity.html"><img class="SmallImage" src="Humidity.png" height="190" alt="python"></a>
+                    <a href="VisualCloudiness.html"><img class="SmallImage border border-danger" src="Cloudiness.png" height="190" alt="python"></a>
+                    <a href="VisualWind.html"><img class="SmallImage" src="Wind.png" height="190" alt="python"></a>
+                </p>
         </div>
-    </div>
+    </div> 
 </body>
 
 </html>

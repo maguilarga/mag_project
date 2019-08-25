@@ -1,5 +1,9 @@
 .Main {
-    background-color: #ededed;
+    background-color: aliceblue;
+}
+
+.NavBar {
+    padding-right: 0px;
 }
 
 .Logo_Sec {
@@ -7,20 +11,20 @@
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
-    padding: 10px 0px 15px 50px;
+    padding: 20px 0px 15px 50px;
 }
 
 .MainRow {
     padding-left: 60px;
-    margin: 50px 0px 0px 0px;
+    margin-top: 50px;
 }
 
 .LeftMain {
-    background-color: white;
+    background-color: lightblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
     padding: 0px 40px 40px 30px;
-    margin-right: 30px;
+    margin: 0px 50px 30px 0px;
 }
 
 .LeftContent {
@@ -29,69 +33,72 @@
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #1A1AC7; 
-    font-weight: bold;
-    padding: 50px 0px 20px 10px;
-}
-
-h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #1A1AC7; 
+    color: #1A1AC7;
     font-weight: bold;
     padding: 50px 0px 20px 10px;
 }
 
 .RightMain {
-    background-color: white;
+    background-color: lightblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 0px 0px, 40px 0px; 
-    /* margin: 50px 0px 0px 50px; */
+    margin-bottom: 30px;
 }
 
-/*
-.TopRowL {
-    text-align: center;
+h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 15px;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    vertical-align: middle;
+    color: #1A1AC7;
+    font-weight: bold;
+    padding: 50px 0px 20px 10px;
+}
+
+.ImageCtr{
+    padding: 0px 40px 20px 0px;    
 }
 
 .SmallImage {
-    padding: 0px 10px 20px 0px;
-}
+    margin: 0px 5px 20px 5px;
+} 
 
+.BigImage {
+    margin: 10px 25px 35px 55px;
+} 
 
-
-.OnlyMain {
-    background-color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-left:60px;
-    margin: 50px 0px 0px 50px;
-}
-
-.title {
-    order: 1;
-}
-
-.Image2 {
-    padding: 0px 20px 20px 0px;
-    width: 100% \9;
-}
-
-.border-Latitude {
-    background-color: #0BADA6;
-}
-
-.Image3 {
+.ImageCtr {
     display: block;
     margin-left: auto;
     margin-right: auto;
  }
 
- .navbar-nav {
- text-align: right;
- }
- 
- */
+ .border {
+    border: 3px solid red !important;
+}
+
+ .OnlyMain {
+    background-color: lightblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 50px 0px 0px 65px;
+}
+
+.TextData{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0px 0px 20px 30px;
+}
+
+table.table-bordered{
+    border:2px solid white;
+    margin-top:20px;
+  }
+table.table-bordered > thead > tr > th{
+    border:2px solid white;
+}
+table.table-bordered > tbody > tr > td{
+    border:1px solid white;
+}
+
+.CapTxt {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1A1AC7;
+    font-size: 20px;
+    font-weight: bold;
+}
