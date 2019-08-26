@@ -18,8 +18,11 @@
     <div class="row">
         <!-- Our columns function in rows. -->
         <div class="container-fluid NavBar">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                <a class="navbar-brand Logo_Sec" href="index.html">Latitude</a>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top">
+                <a class="navbar-brand Logo_Sec" href="index.html">
+                    <img src="latitude_logo.png" height="50" width="130" alt="Latitude">                
+                    <!-- Latitude -->
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,7 +41,8 @@
                         </div>
                     </li>  
                     <li class="nav-item mx-3">
-                        <a class="nav-link" href="Comparison.html">Comparison</a>
+                        <a class="nav-link" href="Comparison.html">Comparison
+                        </a>
                     </li>
                     <li class="nav-item mx-3">
                     <a class="nav-link" href="Data.html">Data</a>
@@ -57,14 +61,18 @@
                     <img class="img-circle img-responsive ImageCtr" src="MaxTemp.png" height="300" alt="python">
                 </p>
             </div>
-            <p> The purpose of this project was to analyze how weather changes as you get closer to the equator. To 
-                    accomplish this analysis, we first pulled data from OpenWeatherMap API to ensamble a dataset on over 500 
-                    cities.
-            </p>
-            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather .vs. latitude. 
-                    factors we looked at included temperature, cloudiness, wind speed and humidity. This site provides the 
-                    source data and visualizations created as part of the analysis as well as explanations and descriptions 
-                    of any trends and sorrelations witnessed.
+            <p> "What's the weather like as we approach the equator?" Anyone would answer: "Duh. It gets hotter...". 
+                But ... can we prove it </p>
+            <p> The purpose of our project is to analyze how weather changes as you get closer to the equator to 
+                demonstrate that the latitude affects the temperature and, possibly, other factors. </p>
+            <p> To perform the analysis, we used the OpenWeatherMap API to gather data on more than 500 cities; we 
+                gathered data on Temperature, Humidity, Cloudiness and Wind Speed. </p>
+            <p> Once we had the data, we used Matplotlib to plot the data and find a correlation between the different 
+                factors and the position of the city in the globe. </p>
+            <p> The conclusion? Latitude certainly affects the temperature of the place, as well as the humidity but 
+                has no discerning effect on cloudiness or wind speed.</p>
+            <p> Feel free to navigate the site to look at the original data gathered and the charts that drove the 
+                conclusions.
             </p>
         </div>
         <div class="col-12 col-sm-11 col-md-11 col-lg-5 RightMain">
